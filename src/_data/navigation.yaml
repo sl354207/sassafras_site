@@ -1,10 +1,10 @@
 ---
 items:
-  - text: Menu One
+  - text: Home
+    url: "/"
+  - text: Services
     url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
+  - text: Tree ID
     url: "#"
   - text: Blog
     url: "/blog"

@@ -19,10 +19,12 @@
         <!-- Mobile menu - uses alpinejs -->
         <div x-show.transition="open" x-on:click.away="open = false" class="absolute top-16 block sm:hidden bg-gray-800">
             <div class="px-2 pt-2 pb-3 space-y-1">
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dashboard</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Team</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Projects</a>
-                <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Calendar</a>
+              {# loop through navigation.yaml and find main header links for hamburger#}
+              {% if navigation.item_main %}
+                {% for item in navigation.item_main %}
+                  <a href="{{ item.url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">{{ item.text }}</a>
+                {% endfor %}
+              {% endif %}
             </div>
         </div>
       </div>
@@ -34,23 +36,34 @@
         <div class="hidden sm:block sm:ml-6">
           <div class="flex space-x-4">
             {# navigation items are stored in navigation.yaml #}
-            <a href="{{ navigation.items[0].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.items[0].text }}</a>
+            <a href="{{ navigation.item_main[0].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.item_main[0].text }}</a>
             {# dropdown hover alpinejs #}
             <div x-data="{ open: false }" @mouseover.away = "open = false" class="relative top-1 mt-0.5 bg-gray-800">
-                <a @mouseover="open = true" href="{{ navigation.items[1].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.items[1].text }}</a>
-                <div x-show.transition="open" class="absolute left-0 w-40 mt-2 py-2 bg-gray-800">   
-                    <a href="#" class="transition-colors duration-200 block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Settings</a>
-                    <a href="#" class="transition-colors duration-200 block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Logout</a>
+                <a @mouseover="open = true" href="{{ navigation.item_main[1].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.item_main[1].text }}</a>
+                <div x-show.transition="open" class="absolute left-0 w-40 mt-2 py-2 bg-gray-800">
+                  {# loop through and find service drop down links #}
+                  {% if navigation.item_services %}
+                    {% for item in navigation.item_services %}
+                      <a href="{{ item.url }}" class="transition-colors duration-200 block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ item.text }}</a>
+                    {% endfor %}
+                  {% endif %}   
                 </div>
             </div>
             <div x-data="{ open: false }" @mouseover.away = "open = false" class="relative top-1 mt-0.5 bg-gray-800">
-                <a @mouseover="open = true" href="{{ navigation.items[2].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.items[2].text }}</a>
-                <div x-show.transition="open" class="absolute left-0 w-40 mt-2 py-2 bg-gray-800">   
-                    <a href="#" class="transition-colors duration-200 block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Trees</a>
-                    <a href="#" class="transition-colors duration-200 block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Shrubs</a>
+                <a @mouseover="open = true" href="{{ navigation.item_main[2].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.item_main[2].text }}</a>
+                <div x-show.transition="open" class="absolute left-0 w-40 mt-2 py-2 bg-gray-800"> 
+                   {# loop through and find id dropdown links #}
+                   {% if navigation.item_id %}
+                    {% for item in navigation.item_id %}
+                      <a href="{{ item.url }}" class="transition-colors duration-200 block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ item.text }}</a>
+                    {% endfor %}
+                  {% endif %}    
                 </div>
             </div>
-            <a href="{{ navigation.items[3].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.items[3].text }}</a>
+            <a href="{{ navigation.item_main[3].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.item_main[3].text }}</a>
+            <a href="{{ navigation.item_main[4].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.item_main[4].text }}</a>
+            <a href="{{ navigation.item_main[5].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.item_main[5].text }}</a>
+
           </div>
         </div>
       </div>

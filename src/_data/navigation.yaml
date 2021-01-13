@@ -1,10 +1,28 @@
 ---
-items:
+item_main:
   - text: Home
     url: "/"
   - text: Services
-    url: "#"
+    url: "/services"
   - text: Tree ID
-    url: "#"
+    url: "/identification"
   - text: Blog
     url: "/blog"
+  - text: Resources
+    url: "#"
+  - text: Contact Us
+    url: "#"
+item_services:
+  - text: Planting
+    url: "#"
+  - text: Pruning/Trimming
+    url: "#"
+  - text: Removal
+    url: "#"
+  - text: Support Systems
+    url: "#"
+item_id:
+  - text: Trees
+    url: "#"
+  - text: Shrubs
+    url: "#"

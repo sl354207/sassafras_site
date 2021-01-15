@@ -23,6 +23,6 @@ item_services:
     url: "#"
 item_id:
   - text: Trees
-    url: "#"
+    url: "/identification/trees"
   - text: Shrubs
-    url: "#"
+    url: "/identification/shrubs"

@@ -1,0 +1,41 @@
+---
+layout: trees
+---
+{# trees index page inherits from trees.html and then default.html #}
+<section class="mt-15">
+    {% set  treeslist = collections.tree %}
+
+    {% for tree in  treeslist | reverse %}
+        <article class="my-8">
+            <h2 class="font-bold text-3xl text-gray-900 mb-2">
+                <a href="{{ tree.url | url }}">
+                    {% if tree.data.title %}
+                        {{ tree.data.title }}
+                    {% else %}
+                        Untitled
+                    {% endif %}
+                </a>
+            </h2>
+            <p class="text-base leading-6 text-gray-500 mb-3">
+                <time>
+                    {{ tree.date | readableDate }}
+                    by
+                    <a>{{ tree.data.author }}</a>
+
+                </time>
+            </p>
+            {% if tree.data.description %}
+                <p class="text-lg text-gray-500 mb-3">
+                    {{ tree.data.description }}
+                </p>
+            {% endif %}
+
+            <p>
+                <a href="{{ tree.url | url }}" class="text-indigo-500 font-bold text-lg">
+                    Deeerrrrr →
+                </a>
+            </p>
+
+        </article>
+    {% endfor %}
+</section>

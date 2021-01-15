@@ -1,0 +1,41 @@
+---
+layout: shrubs
+---
+{# shrubs index page inherits from shrubs.html and then default.html #}
+<section class="mt-15">
+    {% set  serviceslist = collections.service %}
+
+    {% for service in  serviceslist | reverse %}
+        <article class="my-8">
+            <h2 class="font-bold text-3xl text-gray-900 mb-2">
+                <a href="{{ service.url | url }}">
+                    {% if service.data.title %}
+                        {{ service.data.title }}
+                    {% else %}
+                        Untitled
+                    {% endif %}
+                </a>
+            </h2>
+            <p class="text-base leading-6 text-gray-500 mb-3">
+                <time>
+                    {{ service.date | readableDate }}
+                    by
+                    <a>{{ service.data.author }}</a>
+
+                </time>
+            </p>
+            {% if service.data.description %}
+                <p class="text-lg text-gray-500 mb-3">
+                    {{ service.data.description }}
+                </p>
+            {% endif %}
+
+            <p>
+                <a href="{{ service.url | url }}" class="text-indigo-500 font-bold text-lg">
+                    Deeerrrrr →
+                </a>
+            </p>
+
+        </article>
+    {% endfor %}
+</section>

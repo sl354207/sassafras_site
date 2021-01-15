@@ -9,9 +9,9 @@ item_main:
   - text: Blog
     url: "/blog"
   - text: Resources
-    url: "#"
+    url: "/resources"
   - text: Contact Us
-    url: "#"
+    url: "/contacts"
 item_services:
   - text: Planting
     url: "#"

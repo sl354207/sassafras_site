@@ -3,14 +3,14 @@ layout: services
 ---
 {# Services index page inherits from services.html and then default.html #}
 <section class="mt-15">
-    {% set postslist = collections.post %}
+    {% set  serviceslist = collections.service %}
 
-    {% for post in postslist | reverse %}
+    {% for service in  serviceslist | reverse %}
         <article class="my-8">
             <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
+                <a href="{{ service.url | url }}">
+                    {% if service.data.title %}
+                        {{ service.data.title }}
                     {% else %}
                         Untitled
                     {% endif %}
@@ -18,20 +18,20 @@ layout: services
             </h2>
             <p class="text-base leading-6 text-gray-500 mb-3">
                 <time>
-                    {{ post.date | readableDate }}
+                    {{ service.date | readableDate }}
                     by
-                    <a>{{ post.data.author }}</a>
+                    <a>{{ service.data.author }}</a>
 
                 </time>
             </p>
-            {% if post.data.description %}
+            {% if service.data.description %}
                 <p class="text-lg text-gray-500 mb-3">
-                    {{ post.data.description }}
+                    {{ service.data.description }}
                 </p>
             {% endif %}
 
             <p>
-                <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
+                <a href="{{ service.url | url }}" class="text-indigo-500 font-bold text-lg">
                     Deeerrrrr →
                 </a>
             </p>

@@ -3,14 +3,14 @@ layout: shrubs
 ---
 {# shrubs index page inherits from shrubs.html and then default.html #}
 <section class="mt-15">
-    {% set  serviceslist = collections.service %}
+    {% set  shrubslist = collections.shrub %}
 
-    {% for service in  serviceslist | reverse %}
+    {% for shrub in  shrubslist | reverse %}
         <article class="my-8">
             <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="{{ service.url | url }}">
-                    {% if service.data.title %}
-                        {{ service.data.title }}
+                <a href="{{ shrub.url | url }}">
+                    {% if shrub.data.title %}
+                        {{ shrub.data.title }}
                     {% else %}
                         Untitled
                     {% endif %}
@@ -18,20 +18,20 @@ layout: shrubs
             </h2>
             <p class="text-base leading-6 text-gray-500 mb-3">
                 <time>
-                    {{ service.date | readableDate }}
+                    {{ shrub.date | readableDate }}
                     by
-                    <a>{{ service.data.author }}</a>
+                    <a>{{ shrub.data.author }}</a>
 
                 </time>
             </p>
-            {% if service.data.description %}
+            {% if shrub.data.description %}
                 <p class="text-lg text-gray-500 mb-3">
-                    {{ service.data.description }}
+                    {{ shrub.data.description }}
                 </p>
             {% endif %}
 
             <p>
-                <a href="{{ service.url | url }}" class="text-indigo-500 font-bold text-lg">
+                <a href="{{ shrub.url | url }}" class="text-indigo-500 font-bold text-lg">
                     Deeerrrrr →
                 </a>
             </p>

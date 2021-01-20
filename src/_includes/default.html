@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 {# default html base which all others are built on #}
-<html lang="en">
+<html lang="en"class="h-full">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge"/>
@@ -17,20 +17,21 @@
       <link rel="stylesheet" type="text/css" href="/static/css/prism-tomorrow.css">
     {% endif %}
   </head>
-  <body>
-    {% include "./partials/navbar.html" %}
+  <body class="h-full min-h-full">
+    <div class="relative min-h-full pb-16">
+      {% include "./partials/navbar.html" %}
 
-    {{ content | safe }}
+      {{ content | safe }}
 
-    {% include "./partials/footer.html" %}
+      {% include "./partials/footer.html" %}
 
-    <script src="/static/js/alpine.js"></script>
+      <script src="/static/js/alpine.js"></script>
 
-    {% if path == "home" %}
-      <!-- Netlify Identity Widget -->
-      <!-- Needed only if you are using Netlify Identity feature -->
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-    {% endif %}
-
+      {% if path == "home" %}
+        <!-- Netlify Identity Widget -->
+        <!-- Needed only if you are using Netlify Identity feature -->
+        <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+      {% endif %}
+    </div>
   </body>
 </html>

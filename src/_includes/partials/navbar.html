@@ -17,7 +17,7 @@
           </svg>
         </button>
         <!-- Mobile menu - uses alpinejs -->
-        <div x-show.transition="open" x-on:click.away="open = false" class="absolute top-16 block sm:hidden bg-gray-800">
+        <div x-show.transition="open" x-on:click.away="open = false" class="absolute z-10 top-16 block sm:hidden bg-gray-800">
             <div class="px-2 pt-2 pb-3 space-y-1">
               {# loop through navigation.yaml and find main header links for hamburger#}
               {% if navigation.item_main %}
@@ -47,7 +47,7 @@
             {# dropdown hover alpinejs #}
             <div x-data="{ open: false }" @mouseover.away = "open = false" class="relative top-1 mt-0.5 bg-gray-800">
                 <a @mouseover="open = true" href="{{ navigation.item_main[1].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.item_main[1].text }}</a>
-                <div x-show.transition="open" class="absolute left-0 w-40 mt-2 py-2 bg-gray-800">
+                <div x-show.transition="open" class="absolute z-10 left-0 w-40 mt-2 py-2 bg-gray-800">
                   {# loop through and find service drop down links #}
                   {% if navigation.item_services %}
                     {% for item in navigation.item_services %}
@@ -58,7 +58,7 @@
             </div>
             <div x-data="{ open: false }" @mouseover.away = "open = false" class="relative top-1 mt-0.5 bg-gray-800">
                 <a @mouseover="open = true" href="{{ navigation.item_main[2].url }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ navigation.item_main[2].text }}</a>
-                <div x-show.transition="open" class="absolute left-0 w-40 mt-2 py-2 bg-gray-800"> 
+                <div x-show.transition="open" class="absolute z-10 left-0 w-40 mt-2 py-2 bg-gray-800"> 
                    {# loop through and find id dropdown links #}
                    {% if navigation.item_id %}
                     {% for item in navigation.item_id %}

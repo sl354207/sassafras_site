@@ -2,40 +2,62 @@
 layout: blog
 ---
 {# Blog index page inherits from blog.html and then default.html #}
-<section class="mt-15">
-    {% set postslist = collections.post %}
+<section class="mt-12">
+    <div class="relative px-4 pb-20 sm:px-6 lg:pb-28 lg:px-8">
+        <div class="relative mx-auto max-w-7xl">
+            <div class="grid gap-8 mx-auto mt-12 md:grid-cols-2 xl:grid-cols-3 lg:max-w-none">
+                {% set postslist = collections.post %}
 
-    {% for post in postslist | reverse %}
-        <article class="my-8">
-            <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
-                    {% else %}
-                        Untitled
-                    {% endif %}
-                </a>
-            </h2>
-            <p class="text-base leading-6 text-gray-500 mb-3">
-                <time>
-                    {{ post.date | readableDate }}
-                    by
-                    <a>{{ post.data.author }}</a>
+                {% for post in postslist | reverse %}
+                    <div class="flex flex-col overflow-hidden rounded-lg shadow-lg">
+                        <div class="flex-shrink-0">
+                            <a href="{{ post.url | url }}">
+                                <img class="object-cover w-full h-48" src="/static/img/sunset.jpg" alt="Thumbnail">
+                            </a>
+                        </div>
+                        <div class="flex flex-col justify-between flex-1 p-6 pt-2 bg-white">
+                            <div class="flex-1">
+                                <article class="">
+                                    <a href="{{ post.url | url }}" class="block">
+                                        <h3 class="mt-2 text-xl font-semibold leading-7">
+                                            {{ post.data.title }}
+                                        </h3>
+                                    </a>
+                            {# <h2 class="font-bold text-3xl text-gray-900 mb-2">
+                                <a href="{{ post.url | url }}">
+                                    {% if post.data.title %}
+                                        {{ post.data.title }}
+                                    {% else %}
+                                        Untitled
+                                    {% endif %}
+                                </a>
+                            </h2> #}
+                                    <p class="text-base italic leading-6 text-gray-500 mb-3">
+                                        <time>
+                                            {{ post.date | readableDate }}
+                                            by
+                                            <a>{{ post.data.author }}</a>
 
-                </time>
-            </p>
-            {% if post.data.description %}
-                <p class="text-lg text-gray-500 mb-3">
-                    {{ post.data.description }}
-                </p>
-            {% endif %}
+                                        </time>
+                                    </p>
+                                    {% if post.data.description %}
+                                        <p class="text-lg text-gray-500 mb-3">
+                                            {{ post.data.description }}
+                                        </p>
+                                    {% endif %}
 
-            <p>
-                <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
-                    Kwiklik →
-                </a>
-            </p>
+                                    <p>
+                                        <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
+                                            Kwiklik →
+                                        </a>
+                                    </p>
 
-        </article>
-    {% endfor %}
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
 </section>

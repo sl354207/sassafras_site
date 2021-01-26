@@ -4,19 +4,50 @@ prism: true
 permalink: /services/{{ title | slug }}/
 ---
 {# Base service page built on default #}
-<div class="container max-w-4xl mt-6 px-6">
-    <div class="pb-5 mb-5 border-b border-gray-100">
-        <h1 class="font-bold text-5xl">{{title}}</h1>
-        <p class="text-center text-base leading-6 font-medium text-gray-500">
+<div class="max-w-none sm:container lg:max-w-none w-full mt-6 px-6">
+    <h1 class="font-bold text-center text-5xl">{{title}}</h1>
+    <hr class="my-12">
+    <div class="relative px-4 pb-12 sm:px-6 lg:px-8 ">
+        <div class="relative mx-auto max-w-none ">
+            <div class="grid gap-8 mx-4 mt-12 lg:grid-cols-2 max-w-none lg:max-w-none ">
+                {# {% set  serviceslist = collections.service %} #}
+
+                {# {% for service in  serviceslist | reverse %} #}
+                        <div class="flex flex-col overflow-hidden rounded-lg ">
+                            <div class="relative ">
+                                
+                                    <img class="object-cover w-full  " src="/static/img/sunset.jpg" alt="Thumbnail">
+                                    
+                                
+                                    
+                            </div>
+                            
+                            
+                        </div>
+                        <div class="flex flex-col overflow-hidden ">
+                            <article class="prose lg:prose-xl my-4 mx-auto">
+                                {{ content | safe }}
+                            </article>
+                            
+                            
+                        </div>
+                        
+                {# {% endfor %} #}
+            </div>
+        </div>
+    </div>
+
+    {# <div class="pb-5 mb-5 border-b border-gray-100"> #}
+        
+        {# <p class="text-center text-base leading-6 font-medium text-gray-500">
             <time> {{ date | readableDate }}
                 by
                 <a>{{ author }}</a>
 
             </time>
-        </p>
+        </p> #}
 
-    </div>
-    <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ content | safe }}</article>
+    {# </div> #}
+    
 
 </div>

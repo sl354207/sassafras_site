@@ -14,13 +14,13 @@ item_main:
     url: "/contacts"
 item_services:
   - text: Planting
-    url: "/services/this-is-my-fourth-and-latest-post"
+    url: "/services/planting"
   - text: Pruning/Trimming
-    url: "/services/this-is-my-third-post"
+    url: "/services/pruning"
   - text: Removal
-    url: "/services/this-is-my-second-post"
+    url: "/services/tree-removal"
   - text: Support Systems
-    url: "/services/this-is-my-first-post"
+    url: "/services/support-systems"
 item_id:
   - text: Trees
     url: "/identification/trees"

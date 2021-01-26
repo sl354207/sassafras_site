@@ -2,40 +2,111 @@
 layout: identification
 ---
 {# Identification index page inherits from identification.html and then default.html #}
-<section class="mt-15">
-    {% set postslist = collections.post %}
+<hr class="mt-12">
+<div class="relative px-4 pb-12 sm:px-6 lg:px-8 ">
+    <div class="relative mx-auto max-w-none ">
+        <div class="grid gap-8 mx-4 mt-12 md:grid-cols-2 max-w-2xl lg:max-w-none ">
+            {% if navigation.item_id %}
 
-    {% for post in postslist | reverse %}
-        <article class="my-8">
-            <h2 class="font-bold text-3xl text-gray-900 mb-2">
-                <a href="{{ post.url | url }}">
-                    {% if post.data.title %}
-                        {{ post.data.title }}
-                    {% else %}
-                        Untitled
-                    {% endif %}
-                </a>
-            </h2>
-            <p class="text-base leading-6 text-gray-500 mb-3">
-                <time>
-                    {{ post.date | readableDate }}
-                    by
-                    <a>{{ post.data.author }}</a>
+                {% for item in navigation.item_id %}
+                    <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl transition ease-in-out duration-500 transform hover:scale-105 h-96">
+                            <div class="relative flex-shrink-0">
+                                <a href="{{ item.url }}">
+                                    <img class="object-cover w-full opacity-50 h-96" src="/static/img/sunset.jpg" alt="Thumbnail">
+                                    
+                                </a>
+                                    
+                            </div>
+                            <div class="absolute w-full text-center text-black my-48">
+                                <p class="text-3xl tracking-widest font-black">Text</p>
+                            </div>
+                            {# <div class="flex flex-col justify-between flex-1 p-6 pt-2 bg-white">
+                                <div class="flex-1">
+                                    <article class="">
+                                        <a href="{{ service.url | url }}" class="block">
+                                            <h3 class="mt-2 text-xl font-semibold leading-7">
+                                                {{ service.data.title }}
+                                            </h3>
+                                        </a>
+                            
+                                        <p class="text-base italic leading-6 text-gray-500 mb-3">
+                                            <time>
+                                                {{ service.date | readableDate }}
+                                                by
+                                                <a>{{ service.data.author }}</a>
 
-                </time>
-            </p>
-            {% if post.data.description %}
-                <p class="text-lg text-gray-500 mb-3">
-                    {{ post.data.description }}
-                </p>
+                                            </time>
+                                        </p>
+                                        {% if service.data.description %}
+                                            <p class="text-lg text-gray-500 mb-3">
+                                                {{ service.data.description }}
+                                            </p>
+                                        {% endif %}
+
+                                        <p>
+                                            <a href="{{ service.url | url }}" class="text-indigo-500 font-bold text-lg">
+                                                Kwiklik →
+                                            </a>
+                                        </p>
+
+                                    </article>
+                                </div>
+                            </div> #}
+                        </div>
+                {% endfor %}
             {% endif %}
+                    {# <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl transition ease-in-out duration-500 transform hover:scale-105 h-96">
+                        <div class="relative flex-shrink-0">
+                            <a href="{{ service.url | url }}">
+                                <img class="object-cover w-full opacity-50 h-96" src="/static/img/sunset.jpg" alt="Thumbnail">
+                                
+                            </a>
+                                
+                        </div>
+                        <div class="absolute w-full text-center text-black my-48">
+                            <p class="text-3xl tracking-widest font-black">Text</p>
+                        </div>
+                        {# <div class="flex flex-col justify-between flex-1 p-6 pt-2 bg-white">
+                            <div class="flex-1">
+                                <article class="">
+                                    <a href="{{ service.url | url }}" class="block">
+                                        <h3 class="mt-2 text-xl font-semibold leading-7">
+                                            {{ service.data.title }}
+                                        </h3>
+                                    </a>
+                        
+                                    <p class="text-base italic leading-6 text-gray-500 mb-3">
+                                        <time>
+                                            {{ service.date | readableDate }}
+                                            by
+                                            <a>{{ service.data.author }}</a>
 
-            <p>
-                <a href="{{ post.url | url }}" class="text-indigo-500 font-bold text-lg">
-                    ssuuuussss →
-                </a>
-            </p>
+                                        </time>
+                                    </p>
+                                    {% if service.data.description %}
+                                        <p class="text-lg text-gray-500 mb-3">
+                                            {{ service.data.description }}
+                                        </p>
+                                    {% endif %}
 
-        </article>
-    {% endfor %}
-</section>
+                                    <p>
+                                        <a href="{{ service.url | url }}" class="text-indigo-500 font-bold text-lg">
+                                            Kwiklik →
+                                        </a>
+                                    </p>
+
+                                </article>
+                            </div>
+                        </div> #
+                    </div> #}
+        </div>
+    </div>
+</div>
+<hr class="mb-12">
+<div class="relative px-4 pb-12 sm:px-6 lg:px-8 ">
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
+</div>

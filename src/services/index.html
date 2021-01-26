@@ -10,11 +10,15 @@ layout: services
 
             {% for service in  serviceslist | reverse %}
                 <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl transition ease-in-out duration-500 transform hover:scale-105 h-96">
-                        <div class="flex-shrink-0">
+                        <div class="relative flex-shrink-0">
                             <a href="{{ service.url | url }}">
                                 <img class="object-cover w-full opacity-50 h-96" src="/static/img/sunset.jpg" alt="Thumbnail">
+                                
                             </a>
-                            
+                                
+                        </div>
+                        <div class="absolute w-full text-center text-black my-48">
+                            <p class="text-3xl tracking-widest font-black">Text</p>
                         </div>
                         {# <div class="flex flex-col justify-between flex-1 p-6 pt-2 bg-white">
                             <div class="flex-1">
@@ -52,4 +56,12 @@ layout: services
             {% endfor %}
         </div>
     </div>
+</div>
+<hr class="mb-12">
+<div class="relative px-4 pb-12 sm:px-6 lg:px-8 ">
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+    </section>
 </div>

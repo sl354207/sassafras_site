@@ -17,7 +17,7 @@
           </svg>
         </button>
         <!-- Mobile menu - uses alpinejs -->
-        <div x-show.transition="open" x-on:click.away="open = false" class="absolute z-10 top-16 block sm:hidden bg-gray-800">
+        <div x-show.transition="open" x-on:click.away="open = false" class="absolute z-10 top-16 block w-32 sm:hidden bg-gray-800">
             <div class="px-2 pt-2 pb-3 space-y-1">
               {# loop through navigation.yaml and find main header links for hamburger#}
               {% if navigation.item_main %}

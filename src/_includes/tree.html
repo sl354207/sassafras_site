@@ -4,19 +4,64 @@ prism: true
 permalink: /identification/trees/{{ title | slug }}/
 ---
 {# Base tree page built on default #}
-<div class="container max-w-4xl mt-6 px-6">
-    <div class="pb-5 mb-5 border-b border-gray-100">
-        <h1 class="font-bold text-5xl">{{title}}</h1>
-        <p class="text-center text-base leading-6 font-medium text-gray-500">
-            <time> {{ date | readableDate }}
-                by
-                <a>{{ author }}</a>
+<div class="container w-full mt-6 px-6">
+    <h1 class="font-bold text-center text-5xl">{{title}}</h1>
+    <hr class="mt-12">
+    <div class="relative px-4 pb-12 sm:px-6 lg:px-8 ">
+        <div class="relative mx-auto max-w-none ">
+            <div class="grid gap-4 mx-4 mt-12 md:grid-cols-2 lg:grid-cols-4 max-w-2xl lg:max-w-none ">
+                {% set  serviceslist = collections.service %}
 
-            </time>
-        </p>
+                {% for service in  serviceslist | reverse %}
+                    <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl  h-96">
+                            <div class="relative flex-shrink-0">
+                                
+                                    <img class="object-cover w-full  h-96" src="/static/img/sunset.jpg" alt="Thumbnail">
+                                    
+                                
+                                    
+                            </div>
+                            
+                            {# <div class="flex flex-col justify-between flex-1 p-6 pt-2 bg-white">
+                                <div class="flex-1">
+                                    <article class="">
+                                        <a href="{{ service.url | url }}" class="block">
+                                            <h3 class="mt-2 text-xl font-semibold leading-7">
+                                                {{ service.data.title }}
+                                            </h3>
+                                        </a>
+                            
+                                        <p class="text-base italic leading-6 text-gray-500 mb-3">
+                                            <time>
+                                                {{ service.date | readableDate }}
+                                                by
+                                                <a>{{ service.data.author }}</a>
 
+                                            </time>
+                                        </p>
+                                        {% if service.data.description %}
+                                            <p class="text-lg text-gray-500 mb-3">
+                                                {{ service.data.description }}
+                                            </p>
+                                        {% endif %}
+
+                                        <p>
+                                            <a href="{{ service.url | url }}" class="text-indigo-500 font-bold text-lg">
+                                                Kwiklik →
+                                            </a>
+                                        </p>
+
+                                    </article>
+                                </div>
+                            </div> #}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
     </div>
+    <hr class="mb-12">
     <article class="prose lg:prose-xl my-4 mx-auto">
-        {{ content | safe }}</article>
+        {{ content | safe }}
+    </article>
 
 </div>

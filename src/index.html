@@ -90,19 +90,78 @@ path: home
     </div>
   </div>
   
-  <h1>
-    Feemmmmen
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+  <div class="container items-center">
+    <hr class="my-12">
+    {# <h1>
+      Feemmmmen
+      <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
+        {{title}}
+      </strong>
+    </h1> #}
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">JERD</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
-  
+    <p class="text-center">
+      {# <abbr title="netlify cms, eleventy, alpine js & tailwind css">JERD</abbr>
+      Starter Template. Get Started by editing.
+      <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code> #}
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <hr class="my-12">
+    <h1 class="font-bold text-center text-5xl">Services</h1>
+    <div class="relative px-4 pb-12 sm:px-6 lg:px-8 ">
+      <div class="relative mx-auto max-w-none ">
+          <div class="grid gap-8 mx-4 mt-12 md:grid-cols-2 lg:grid-cols-4 max-w-2xl lg:max-w-none ">
+              {% set  serviceslist = collections.service %}
 
-  {% include "./_includes/partials/content.html" %}
+              {% for service in  serviceslist | reverse %}
+                  <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl transition ease-in-out duration-500 transform hover:scale-105 h-64">
+                        <div class="relative flex-shrink-0">
+                            <a href="{{ service.url | url }}">
+                                <img class="object-cover w-full opacity-50 h-96" src="/static/img/sunset.jpg" alt="Thumbnail">
+                                
+                            </a>
+                                
+                        </div>
+                        <div class="absolute w-full text-center text-black my-32">
+                            <p class="text-3xl tracking-widest font-black">Text</p>
+                        </div>
+                        {# <div class="flex flex-col justify-between flex-1 p-6 pt-2 bg-white">
+                            <div class="flex-1">
+                                <article class="">
+                                    <a href="{{ service.url | url }}" class="block">
+                                        <h3 class="mt-2 text-xl font-semibold leading-7">
+                                            {{ service.data.title }}
+                                        </h3>
+                                    </a>
+                        
+                                    <p class="text-base italic leading-6 text-gray-500 mb-3">
+                                        <time>
+                                            {{ service.date | readableDate }}
+                                            by
+                                            <a>{{ service.data.author }}</a>
+
+                                        </time>
+                                    </p>
+                                    {% if service.data.description %}
+                                        <p class="text-lg text-gray-500 mb-3">
+                                            {{ service.data.description }}
+                                        </p>
+                                    {% endif %}
+
+                                    <p>
+                                        <a href="{{ service.url | url }}" class="text-indigo-500 font-bold text-lg">
+                                            Kwiklik →
+                                        </a>
+                                    </p>
+
+                                </article>
+                            </div>
+                        </div> #}
+                  </div>
+              {% endfor %}
+          </div>
+      </div>
+    </div>
+  </div>
+
+  {# {% include "./_includes/partials/content.html" %} #}
 </div>

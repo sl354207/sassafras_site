@@ -16,21 +16,16 @@ path: home
     x-init="loop"
   >
     <div
-      {# style="width: 1350px; height: 901px" #}
+      
       class="h-96 w-full flex overflow-x-hidden"
     >
       <div
         class="bg-black w-full absolute"
         x-show.transition.in.scale.100.duration.1000ms.opacity.30.out.scale.100.duration.1000ms.opacity.10="active == 1"
-        {# x-transition:enter="transition duration-1000"
-        x-transition:enter-start="transform translate-x-full"
-        x-transition:enter-end="transform translate-x-0"
-        x-transition:leave="transition duration-1000"
-        x-transition:leave-start="transform"
-        x-transition:leave-end="transform -translate-x-full" #}
+        
       >
         <img
-          {# style="background-image: url(/static/img/sunset.jpg)" #}
+          
           class="w-full h-96 object-cover bg-no-repeat bg-cover opacity-90"
           alt="1"
           src="/static/img/sunset.jpg"
@@ -39,15 +34,10 @@ path: home
       <div
         class="bg-black w-full absolute"
         x-show.transition.in.scale.100.duration.1000ms.opacity.30.out.scale.100.duration.1000ms.opacity.10="active == 2"
-        {# x-transition:enter="transition duration-1000"
-        x-transition:enter-start="transform translate-x-full"
-        x-transition:enter-end="transform translate-x-0"
-        x-transition:leave="transition duration-1000"
-        x-transition:leave-start="transform"
-        x-transition:leave-end="transform -translate-x-full" #}
+       
       >
         <img
-          {# style="background-image: url(/static/img/dogwood.jpg)" #}
+          
           class="w-full h-96 object-cover bg-no-repeat bg-cover opacity-90"
           alt="2"
           src="/static/img/dogwood.jpg"
@@ -56,15 +46,10 @@ path: home
       <div
         class="bg-black w-full absolute"
         x-show.transition.in.scale.100.duration.1000ms.opacity.30.out.scale.100.duration.1000ms.opacity.10="active == 3"
-        {# x-transition:enter="transition duration-1000"
-        x-transition:enter-start="transform translate-x-full"
-        x-transition:enter-end="transform translate-x-0"
-        x-transition:leave="transition duration-1000"
-        x-transition:leave-start="transform"
-        x-transition:leave-end="transform -translate-x-full" #}
+        
       >
         <img
-          {# style="background-image: url(/static/img/sassafras.jpg)" #}
+          
           class="w-full h-96 object-cover bg-no-repeat bg-cover opacity-90"
           alt="3"
           src="/static/img/sassafras.jpg"
@@ -73,15 +58,10 @@ path: home
       <div
         class="bg-black w-full absolute"
         x-show.transition.in.scale.100.duration.1000ms.opacity.30.out.scale.100.duration.1000ms.opacity.10="active == 4"
-        {# x-transition:enter="transition duration-1000"
-        x-transition:enter-start="transform translate-x-full"
-        x-transition:enter-end="transform translate-x-0"
-        x-transition:leave="transition duration-1000"
-        x-transition:leave-start="transform"
-        x-transition:leave-end="transform -translate-x-full" #}
+        
       >
         <img
-          {# style="background-image: url(/static/img/honey_locust_thorn.jpg)" #}
+          
           class="w-full h-96 object-cover bg-no-repeat bg-cover opacity-90"
           alt="4"
           src="/static/img/honey_locust_thorn.jpg"
@@ -92,17 +72,9 @@ path: home
   
   <div class="container items-center">
     <hr class="my-12">
-    {# <h1>
-      Feemmmmen
-      <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-        {{title}}
-      </strong>
-    </h1> #}
+    
 
     <p class="text-center">
-      {# <abbr title="netlify cms, eleventy, alpine js & tailwind css">JERD</abbr>
-      Starter Template. Get Started by editing.
-      <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code> #}
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     <hr class="my-12">
@@ -121,43 +93,12 @@ path: home
                               </a>
                                   
                           </div>
-                          <div class="absolute w-full text-center text-black my-32">
+                          <div class="absolute w-full text-center text-black my-28">
                               <p class="text-3xl tracking-widest font-black">
                                 {{ item.text }}
                               </p>
                           </div>
-                          {# <div class="flex flex-col justify-between flex-1 p-6 pt-2 bg-white">
-                              <div class="flex-1">
-                                  <article class="">
-                                      <a href="{{ service.url | url }}" class="block">
-                                          <h3 class="mt-2 text-xl font-semibold leading-7">
-                                              {{ service.data.title }}
-                                          </h3>
-                                      </a>
                           
-                                      <p class="text-base italic leading-6 text-gray-500 mb-3">
-                                          <time>
-                                              {{ service.date | readableDate }}
-                                              by
-                                              <a>{{ service.data.author }}</a>
-
-                                          </time>
-                                      </p>
-                                      {% if service.data.description %}
-                                          <p class="text-lg text-gray-500 mb-3">
-                                              {{ service.data.description }}
-                                          </p>
-                                      {% endif %}
-
-                                      <p>
-                                          <a href="{{ service.url | url }}" class="text-indigo-500 font-bold text-lg">
-                                              Kwiklik →
-                                          </a>
-                                      </p>
-
-                                  </article>
-                              </div>
-                          </div> #}
                     </div>
                 {% endfor %}
               {% endif %}

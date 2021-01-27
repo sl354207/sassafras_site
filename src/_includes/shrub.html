@@ -9,10 +9,10 @@ permalink: /identification/shrubs/{{ title | slug }}/
     <hr class="mt-12">
     <div class="relative px-4 pb-12 sm:px-6 lg:px-8 ">
         <div class="relative mx-auto max-w-none ">
-            <div class="grid gap-4 mx-4 mt-12 md:grid-cols-2 lg:grid-cols-4 max-w-2xl lg:max-w-none ">
-                {% set  serviceslist = collections.service %}
+            <div class="grid gap-4 mx-4 mt-12 md:grid-cols-2 lg:grid-cols-4 max-w-2xl lg:max-w-none">
+                {% set  shrubslist = collections.shrub %}
 
-                {% for service in  serviceslist | reverse %}
+                {% for shrub in  shrubslist | reverse %}
                     <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl  h-96">
                             <div class="relative flex-shrink-0">
                                 
@@ -22,38 +22,7 @@ permalink: /identification/shrubs/{{ title | slug }}/
                                     
                             </div>
                             
-                            {# <div class="flex flex-col justify-between flex-1 p-6 pt-2 bg-white">
-                                <div class="flex-1">
-                                    <article class="">
-                                        <a href="{{ service.url | url }}" class="block">
-                                            <h3 class="mt-2 text-xl font-semibold leading-7">
-                                                {{ service.data.title }}
-                                            </h3>
-                                        </a>
                             
-                                        <p class="text-base italic leading-6 text-gray-500 mb-3">
-                                            <time>
-                                                {{ service.date | readableDate }}
-                                                by
-                                                <a>{{ service.data.author }}</a>
-
-                                            </time>
-                                        </p>
-                                        {% if service.data.description %}
-                                            <p class="text-lg text-gray-500 mb-3">
-                                                {{ service.data.description }}
-                                            </p>
-                                        {% endif %}
-
-                                        <p>
-                                            <a href="{{ service.url | url }}" class="text-indigo-500 font-bold text-lg">
-                                                Kwiklik →
-                                            </a>
-                                        </p>
-
-                                    </article>
-                                </div>
-                            </div> #}
                     </div>
                 {% endfor %}
             </div>

@@ -2,6 +2,16 @@ const yaml = require("js-yaml");
 const { DateTime } = require("luxon");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const htmlmin = require("html-minifier");
+const Image = require("@11ty/eleventy-img"); 
+
+(async () => {
+  let url = "src/static/img/sassafras.jpg";
+  let stats = await Image(url, {
+    widths: [300]
+  });
+
+  console.log( stats );
+})();
 
 module.exports = function (eleventyConfig) {
   // Disable automatic use of your .gitignore

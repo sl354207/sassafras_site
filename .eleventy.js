@@ -13,8 +13,9 @@ async function imageShortcode(src, alt, sizes) {
     sharpJpegOptions: {
       quality: 10
     }
+    
   });
-
+  console.log(metadata);
   let imageAttributes = {
     alt,
     sizes,

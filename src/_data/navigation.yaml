@@ -24,5 +24,7 @@ item_services:
 item_id:
   - text: Trees
     url: "/identification/trees"
+    thmb_src: https://res.cloudinary.com/sassafras/image/upload/q_10/v1614004528/sample.jpg
   - text: Shrubs
     url: "/identification/shrubs"
+    thmb_src: https://res.cloudinary.com/sassafras/image/upload/q_10/v1614005690/20200831_132529_kvp7zk.jpg

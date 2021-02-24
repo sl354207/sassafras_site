@@ -3,6 +3,7 @@ title: Post 1
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut venenatis tellus in.
 author: Krank
 date: 2021-09-01
+img_url: https://res.cloudinary.com/sassafras/image/upload/v1614004528/sample.jpg
 tags:
   - blog
   - post

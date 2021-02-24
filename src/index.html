@@ -27,10 +27,13 @@ path: home
         <img
           
           class="w-full h-96 object-cover bg-no-repeat bg-cover opacity-90"
-          alt="1"
-          src="/static/img/sunset.jpg"
+          sizes="(max-width: 96rem) 100vw, 96rem"
+          srcset="https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005755/20200831_134151_riml79.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_768/v1614005755/20200831_134151_riml79.jpg 768w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_1536/v1614005755/20200831_134151_riml79.jpg 1536w"
+          src="https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_1536/v1614005755/20200831_134151_riml79.jpg 1536w"
+          alt="Sassafras leaves"
+          loading="eager"
         />
-        {# {% image "https://res.cloudinary.com/sassafras/image/upload/v1614004528/sample.jpg", "photo of my cat", "200, 400", "(min-width: 30em) 50vw, 100vw" %} #}
+        
       </div>
       <div
         class="bg-black w-full absolute"
@@ -40,8 +43,11 @@ path: home
         <img
           
           class="w-full h-96 object-cover bg-no-repeat bg-cover opacity-90"
-          alt="2"
-          src="/static/img/dogwood.jpg"
+          sizes="(max-width: 96rem) 100vw, 96rem"
+          srcset="https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005690/20200831_132529_kvp7zk.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_768/v1614005690/20200831_132529_kvp7zk.jpg 768w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_1536/v1614005690/20200831_132529_kvp7zk.jpg 1536w"
+          src="https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_1536/v1614005690/20200831_132529_kvp7zk.jpg 1536w"
+          alt="Flowering Dogwood bud and leaves"
+          loading="eager"
         />
       </div>
       <div
@@ -52,8 +58,11 @@ path: home
         <img
           
           class="w-full h-96 object-cover bg-no-repeat bg-cover opacity-90"
-          alt="3"
-          src="/static/img/sassafras.jpg"
+          sizes="(max-width: 96rem) 100vw, 96rem"
+          srcset="https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005783/20201021_180218_jtmeev.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_768/v1614005783/20201021_180218_jtmeev.jpg 768w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_1536/v1614005783/20201021_180218_jtmeev.jpg 1536w"
+          src="https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_1536/v1614005783/20201021_180218_jtmeev.jpg 1536w"
+          alt="Sunset over forest"
+          loading="eager"
         />
       </div>
       <div
@@ -64,8 +73,11 @@ path: home
         <img
           
           class="w-full h-96 object-cover bg-no-repeat bg-cover opacity-90"
-          alt="4"
-          src="/static/img/honey_locust_thorn.jpg"
+          sizes="(max-width: 96rem) 100vw, 96rem"
+          srcset="https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005803/20201129_153021_t9enhf.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_768/v1614005803/20201129_153021_t9enhf.jpg 768w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_1536/v1614005803/20201129_153021_t9enhf.jpg 1536w"
+          src="https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_1536/v1614005803/20201129_153021_t9enhf.jpg 1536w"
+          alt="Thorns from Honey Locust"
+          loading="eager"
         />
       </div>
     </div>
@@ -73,7 +85,6 @@ path: home
   
   <div class="container items-center">
     <hr class="my-12">
-    {% image "https://res.cloudinary.com/sassafras/image/upload/v1614004528/sample.jpg", "photo of my cat", "(min-width: 30em) 50vw, 100vw" %}    
 
     <p class="text-center">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -89,7 +100,7 @@ path: home
                     <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl transition ease-in-out duration-500 transform hover:scale-105 h-64">
                           <div class="relative flex-shrink-0">
                               <a href="{{ item.url }}">
-                                  <img class="object-cover w-full opacity-50 h-96" src="/static/img/sunset.jpg" alt="Thumbnail">
+                                  <img class="object-cover w-full opacity-50 h-96" sizes="{{ item.thmb_sizes }}" srcset="{{ item.thmb_srcset }}"  src="{{ item.thmb_src }}" alt="{{ item.alt }}" loading="{{ item.loading }}">
                                   
                               </a>
                                   

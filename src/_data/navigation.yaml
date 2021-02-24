@@ -15,16 +15,44 @@ item_main:
 item_services:
   - text: Planting
     url: "/services/planting"
+    thmb_srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005690/20200831_132529_kvp7zk.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005690/20200831_132529_kvp7zk.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005690/20200831_132529_kvp7zk.jpg 550w"
+    thmb_src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005690/20200831_132529_kvp7zk.jpg 550w"
+    thmb_sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Flowering Dogwood bud and leaves"
+    loading: "lazy"
   - text: Pruning/Trimming
     url: "/services/pruning"
+    thmb_srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005755/20200831_134151_riml79.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005755/20200831_134151_riml79.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005755/20200831_134151_riml79.jpg 550w"
+    thmb_src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005755/20200831_134151_riml79.jpg 550w"
+    thmb_sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Sassafras leaves"
+    loading: "lazy"
   - text: Removal
     url: "/services/tree-removal"
+    thmb_srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005783/20201021_180218_jtmeev.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005783/20201021_180218_jtmeev.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005783/20201021_180218_jtmeev.jpg 550w"
+    thmb_src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005783/20201021_180218_jtmeev.jpg 550w"
+    thmb_sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Sunset over forest"
+    loading: "lazy"
   - text: Support Systems
     url: "/services/support-systems"
+    thmb_srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005803/20201129_153021_t9enhf.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005803/20201129_153021_t9enhf.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005803/20201129_153021_t9enhf.jpg 550w"
+    thmb_src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005803/20201129_153021_t9enhf.jpg 550w"
+    thmb_sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Thorns from Honey Locust"
+    loading: "lazy"
 item_id:
   - text: Trees
     url: "/identification/trees"
-    thmb_src: https://res.cloudinary.com/sassafras/image/upload/q_10/v1614004528/sample.jpg
+    thmb_srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005690/20200831_132529_kvp7zk.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005690/20200831_132529_kvp7zk.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005690/20200831_132529_kvp7zk.jpg 550w"
+    thmb_src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005690/20200831_132529_kvp7zk.jpg 550w"
+    thmb_sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Flowering Dogwood bud and leaves"
+    loading: "lazy"
   - text: Shrubs
     url: "/identification/shrubs"
-    thmb_src: https://res.cloudinary.com/sassafras/image/upload/q_10/v1614005690/20200831_132529_kvp7zk.jpg
+    thmb_srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005755/20200831_134151_riml79.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005755/20200831_134151_riml79.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005755/20200831_134151_riml79.jpg 550w"
+    thmb_src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005755/20200831_134151_riml79.jpg 550w"
+    thmb_sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Sassafras leaves"
+    loading: "lazy"

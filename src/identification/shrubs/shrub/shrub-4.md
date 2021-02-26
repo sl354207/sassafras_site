@@ -3,6 +3,36 @@ title: Shrub 4
 description: 
 author: Krank
 date: 2021-09-01
+thmb_srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005690/20200831_132529_kvp7zk.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005690/20200831_132529_kvp7zk.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005690/20200831_132529_kvp7zk.jpg 550w"
+thmb_src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005690/20200831_132529_kvp7zk.jpg 550w"
+thmb_sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+alt: "Flowering Dogwood bud and leaves"
+loading: "lazy"
+pictures:
+  picture_1:
+    srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005690/20200831_132529_kvp7zk.jpg       320w,  https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005690/20200831_132529_kvp7zk.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005690/20200831_132529_kvp7zk.jpg 550w"
+    src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005690/20200831_132529_kvp7zk.jpg 550w"
+    sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Flowering Dogwood bud and leaves"
+    loading: "lazy"
+  picture_2:
+    srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005755/20200831_134151_riml79.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005755/20200831_134151_riml79.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005755/20200831_134151_riml79.jpg 550w"
+    src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005755/20200831_134151_riml79.jpg 550w"
+    sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Sassafras leaves"
+    loading: "lazy"
+  picture_3:
+    srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005783/20201021_180218_jtmeev.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005783/20201021_180218_jtmeev.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005783/20201021_180218_jtmeev.jpg 550w"
+    src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005783/20201021_180218_jtmeev.jpg 550w"
+    sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Sunset over forest"
+    loading: "lazy"
+  picture_4:
+    srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005803/20201129_153021_t9enhf.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005803/20201129_153021_t9enhf.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005803/20201129_153021_t9enhf.jpg 550w"
+    src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005803/20201129_153021_t9enhf.jpg 550w"
+    sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+    alt: "Thorns from Honey Locust"
+    loading: "lazy"
 tags:
   - shrub
   - shrubs

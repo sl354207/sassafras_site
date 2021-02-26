@@ -10,21 +10,28 @@ permalink: /identification/shrubs/{{ title | slug }}/
     <div class="relative px-4 pb-12 sm:px-6 lg:px-8 ">
         <div class="relative mx-auto max-w-none ">
             <div class="grid gap-4 mx-4 mt-12 md:grid-cols-2 lg:grid-cols-4 max-w-2xl lg:max-w-none">
-                {% set  shrubslist = collections.shrub %}
-
-                {% for shrub in  shrubslist | reverse %}
+            
+                {# copy and past this section for new image and adjust grid if necessary #}
                     <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl  h-96">
-                            <div class="relative flex-shrink-0">
-                                
-                                    <img class="object-cover w-full  h-96" src="/static/img/sunset.jpg" alt="Thumbnail">
-                                    
-                                
-                                    
-                            </div>
-                            
-                            
+                        <div class="relative flex-shrink-0">        
+                            <img class="object-cover w-full  h-96" sizes="{{ pictures.picture_1.sizes }}" srcset="{{ pictures.picture_1.srcset }}"  src="{{ pictures.picture_1.src }}" alt="{{ pictures.picture_1.alt }}" loading="{{ pictures.picture_1.loading }}">        
+                        </div>       
                     </div>
-                {% endfor %}
+                    <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl  h-96">
+                        <div class="relative flex-shrink-0">        
+                            <img class="object-cover w-full  h-96" sizes="{{ pictures.picture_2.sizes }}" srcset="{{ pictures.picture_2.srcset }}"  src="{{ pictures.picture_2.src }}" alt="{{ pictures.picture_2.alt }}" loading="{{ pictures.picture_2.loading }}">        
+                        </div>       
+                    </div>
+                    <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl  h-96">
+                        <div class="relative flex-shrink-0">        
+                            <img class="object-cover w-full  h-96" sizes="{{ pictures.picture_3.sizes }}" srcset="{{ pictures.picture_3.srcset }}"  src="{{ pictures.picture_3.src }}" alt="{{ pictures.picture_3.alt }}" loading="{{ pictures.picture_3.loading }}">        
+                        </div>       
+                    </div>
+                    <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl  h-96">
+                        <div class="relative flex-shrink-0">        
+                            <img class="object-cover w-full  h-96" sizes="{{ pictures.picture_4.sizes }}" srcset="{{ pictures.picture_4.srcset }}"  src="{{ pictures.picture_4.src }}" alt="{{ pictures.picture_4.alt }}" loading="{{ pictures.picture_4.loading }}">        
+                        </div>       
+                    </div>
             </div>
         </div>
     </div>

@@ -12,7 +12,7 @@ layout: identification
                     <div class="flex flex-col overflow-hidden rounded-lg  border-solid border-2 border-opacity-50 border-black shadow-2xl transition ease-in-out duration-500 transform hover:scale-105 h-96">
                             <div class="relative flex-shrink-0">
                                 <a href="{{ item.url }}">
-                                    <img class="object-cover w-full opacity-50 h-96" src="{{ item.thmb_src }}" alt="Thumbnail">
+                                    <img class="object-cover w-full opacity-50 h-96" sizes="{{ item.thmb_sizes }}" srcset="{{ item.thmb_srcset }}"  src="{{ item.thmb_src }}" alt="{{ item.alt }}" loading="{{ item.loading }}">
                                     
                                 </a>
                                     

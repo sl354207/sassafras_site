@@ -3,6 +3,11 @@ title: Tree Removal
 description: 
 date: 2021-09-03
 author: Krag
+srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005690/20200831_132529_kvp7zk.jpg 320w,  https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_512/v1614005690/20200831_132529_kvp7zk.jpg 512w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_680/v1614005690/20200831_132529_kvp7zk.jpg 680w"
+src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_680/v1614005690/20200831_132529_kvp7zk.jpg 680w"
+sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+alt: "Flowering Dogwood bud and leaves"
+loading: "lazy"
 tags:
   - tree-removal
   - services

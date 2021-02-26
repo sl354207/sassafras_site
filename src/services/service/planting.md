@@ -3,6 +3,11 @@ title: Planting
 description: 
 date: 2021-09-23
 author: Kreen
+srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005755/20200831_134151_riml79.jpg 320w,  https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_512/v1614005755/20200831_134151_riml79.jpg 512w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_680/v1614005755/20200831_134151_riml79.jpg 680w"
+src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_680/v1614005755/20200831_134151_riml79.jpg 680w"
+sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+alt: "Sassafras leaves"
+loading: "lazy"
 tags: 
   - planting
   - services

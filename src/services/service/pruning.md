@@ -3,6 +3,11 @@ title: Pruning
 description: 
 date: 2021-09-02
 author: Krep
+srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005783/20201021_180218_jtmeev.jpg 320w,  https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_512/v1614005783/20201021_180218_jtmeev.jpg 512w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_680/v1614005783/20201021_180218_jtmeev.jpg 680w"
+src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_680/v1614005783/20201021_180218_jtmeev.jpg 680w"
+sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+alt: "Sunset over forest"
+loading: "lazy"
 tags:
   - pruning
   - services

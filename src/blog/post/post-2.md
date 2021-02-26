@@ -3,6 +3,11 @@ title: Post 2
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lectus nulla at volutpat diam ut venenatis tellus in.
 author: Krank
 date: 2021-09-01
+thmb_srcset: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_320/v1614005783/20201021_180218_jtmeev.jpg 320w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_415/v1614005783/20201021_180218_jtmeev.jpg 415w, https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005783/20201021_180218_jtmeev.jpg 550w"
+thmb_src: "https://res.cloudinary.com/sassafras/image/upload/f_auto,q_70,w_550/v1614005783/20201021_180218_jtmeev.jpg 550w"
+thmb_sizes: "(max-width: 26rem) 76vw, (max-width: 48rem) 43vw, 36vw"
+alt: "Sunset over forest"
+loading: "lazy"
 tags:
   - blog
   - post

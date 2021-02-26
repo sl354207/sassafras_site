@@ -65,7 +65,7 @@ layout: blog
                     <div class="flex flex-col overflow-hidden rounded-lg border-solid border-2 border-opacity-50 border-black shadow-2xl transition ease-in-out duration-500 transform hover:scale-105">
                         <div class="flex-shrink-0">
                             <a href="{{ post.url | url }}">
-                                <img class="object-cover w-full h-48" src="/static/img/sunset.jpg" alt="Thumbnail">
+                                <img class="object-cover w-full h-48" sizes="{{ post.data.thmb_sizes }}" srcset="{{ post.data.thmb_srcset }}"  src="{{ post.data.thmb_src }}" alt="{{ post.data.alt }}" loading="{{ post.data.loading }}">
                             </a>
                         </div>
                         <div class="flex flex-col justify-between flex-1 p-6 pt-2 bg-white">
